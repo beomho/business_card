@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.rotation-div {
+  width: 800px;
+  height: 800px;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.rotation-point {
+  width: 800px;
+  height: 800px;
+}
