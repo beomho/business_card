@@ -1,54 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html {
+  background: #131313;
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html {
+  line-height: 1.1;
+  font-size: 16px;
+  color: #f5eee6;
+  /* font-family: "Tusker Grotesk", sans-serif; */
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+* {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body[class*="no-scroll"] {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+#main-wrap {
+  overflow-x: hidden;
+}
+
+[class*="page-header"] {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+html[class*="font-loaded"] #header [class*="wrap-header"],
+html[class*="font-loaded"] [class*="main-wrapper"],
+html[class*="font-loaded"] [class*="availability"] .scaling-svg,
+html[class*="font-loaded"] [class*="availability"] .data,
+html[class*="font-loaded"] [class*="availability"] .label {
+  opacity: 1;
+}
+
+[class*="page-header"] [class*="main-wrapper"] {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+[class*="main-wrapper"] {
+  position: relative;
+  max-width: 100%;
+  padding-left: 28px;
+  padding-right: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Black Han Sans", sans-serif;
+}
+@media (max-width: 1199px) {
+  [class*="page-header"] [class*="main-wrapper"] [class|="text"] {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Portrait */
+@media screen and (orientation: portrait) {
 }
+/* end of Portrait */
 
-.card {
-  padding: 2em;
+/* Landscape */
+@media screen and (orientation: landscape) {
 }
+/*end of Landscape*/
 
-.read-the-docs {
-  color: #888;
-}
-
-.rotation-div {
-  width: 800px;
-  height: 800px;
-  background-color: black;
-  opacity: 0.1;
-}
-
-.rotation-point {
-  width: 800px;
-  height: 800px;
+h1,
+[class*="h1"] {
+  font-size: 10.9375rem;
+  font-size: 10vw;
 }
