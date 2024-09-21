@@ -1,0 +1,189 @@
+Sep 21 05:42:13 fedora kernel: Linux version 6.10.9-200.fc40.x86_64 (mockbuild@eed293a01169418eb17e82cca872df8c) (gcc (GCC) 14.2.1 20240801 (Red Hat 14.2.1-1), GNU ld version 2.41-37.fc40) #1 SMP PREEMPT_DYNAMIC Sun Sep  8 17:23:55 UTC 2024
+Sep 21 05:42:13 fedora kernel: Command line: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.10.9-200.fc40.x86_64 root=UUID=bcc74405-ffed-4ba7-ac13-0823470b55a0 ro rootflags=subvol=root rhgb quiet
+Sep 21 05:42:13 fedora kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+Sep 21 05:42:13 fedora kernel: BIOS-provided physical RAM map:
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009efff] reserved
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] usable
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x0000000000100000-0x0000000037cedfff] usable
+Sep 21 05:42:13 fedora kernel: BIOS-e820: [mem 0x0000000100000000-0x00000008b07fffff] usable
+Sep 21 05:42:13 fedora kernel: NX (Execute Disable) protection: active
+Sep 21 05:42:13 fedora kernel: APIC: Static calls initialized
+Sep 21 05:42:13 fedora kernel: e820: update [mem 0x31c36018-0x31c5a657] usable ==> usable
+Sep 21 05:42:13 fedora kernel: extended physical RAM map:
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000000000000-0x000000000009dfff] usable
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x000000000009e000-0x000000000009efff] reserved
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x000000000009f000-0x000000000009ffff] usable
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000000100000-0x0000000031c36017] usable
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000031c36018-0x0000000031c5a657] usable
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000031c5a658-0x0000000037cedfff] usable
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000037cee000-0x0000000040b46fff] reserved
+Sep 21 05:42:13 fedora kernel: reserve setup_data: [mem 0x0000000100000000-0x00000008b07fffff] usable
+Sep 21 05:42:13 fedora kernel: efi: EFI v2.8 by American Megatrends
+Sep 21 05:42:13 fedora kernel: efi: ACPI=0x40c2c000 ACPI 2.0=0x40c2c014 TPMFinalLog=0x40cc6000 SMBIOS=0x41555000 SMBIOS 3.0=0x41554000 MEMATTR=0x34025018 ESRT=0x3402eb98 MOKvar=0x4156a000 RNG=0x40b74018 TPMEventLog=0x34011018 
+Sep 21 05:42:13 fedora kernel: random: crng init done
+Sep 21 05:42:13 fedora kernel: efi: Remove mem85: MMIO range=[0xc0000000-0xcfffffff] (256MB) from e820 map
+Sep 21 05:42:13 fedora kernel: e820: remove [mem 0xc0000000-0xcfffffff] reserved
+Sep 21 05:42:13 fedora kernel: efi: Not removing mem86: MMIO range=[0xfe000000-0xfe010fff] (68KB) from e820 map
+Sep 21 05:42:13 fedora kernel: efi: Not removing mem87: MMIO range=[0xfec00000-0xfec00fff] (4KB) from e820 map
+Sep 21 05:42:13 fedora kernel: efi: Not removing mem88: MMIO range=[0xfed00000-0xfed00fff] (4KB) from e820 map
+Sep 21 05:42:13 fedora kernel: efi: Not removing mem90: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+Sep 21 05:42:13 fedora kernel: efi: Remove mem91: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+Sep 21 05:42:13 fedora kernel: e820: remove [mem 0xff000000-0xffffffff] reserved
+Sep 21 05:42:13 fedora kernel: secureboot: Secure boot disabled
+Sep 21 05:42:13 fedora kernel: SMBIOS 3.5.0 present.
+Sep 21 05:42:13 fedora kernel: DMI: ASUSTeK COMPUTER INC. ASUS TUF Gaming F17 FX707ZM_FX707ZM/FX707ZM, BIOS FX707ZM.316 05/03/2023
+Sep 21 05:42:13 fedora kernel: DMI: Memory slots populated: 2/2
+Sep 21 05:42:13 fedora kernel: tsc: Detected 2700.000 MHz processor
+Sep 21 05:42:13 fedora kernel: tsc: Detected 2688.000 MHz TSC
+Sep 21 05:42:13 fedora kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Sep 21 05:42:13 fedora kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Sep 21 05:42:13 fedora kernel: last_pfn = 0x8b0800 max_arch_pfn = 0x400000000
+Sep 21 05:42:13 fedora kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs
+Sep 21 05:42:13 fedora kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Sep 21 05:42:13 fedora kernel: last_pfn = 0x41800 max_arch_pfn = 0x400000000
+Sep 21 05:42:13 fedora kernel: esrt: Reserving ESRT space from 0x000000003402eb98 to 0x000000003402ec98.
+Sep 21 05:42:13 fedora kernel: e820: update [mem 0x3402e000-0x3402efff] usable ==> reserved
+Sep 21 05:42:13 fedora kernel: Using GB pages for direct mapping
+Sep 21 05:42:13 fedora kernel: Incomplete global flushes, disabling PCID
+Sep 21 05:42:13 fedora kernel: secureboot: Secure boot disabled
+Sep 21 05:42:13 fedora kernel: RAMDISK: [mem 0x2ab83000-0x2f6d2fff]
+Sep 21 05:42:13 fedora kernel: ACPI: Early table checksum verification disabled
+Sep 21 05:42:13 fedora kernel: ACPI: RSDP 0x0000000040C2C014 000024 (v02 _ASUS_)
+Sep 21 05:42:13 fedora kernel: ACPI: XSDT 0x0000000040C2B728 000124 (v01 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: FACP 0x0000000040C27000 000114 (v06 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: DSDT 0x0000000040BB8000 06E216 (v02 _ASUS_ Notebook 01072009 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: FACS 0x0000000040D99000 000040
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040C28000 002877 (v02 DptfTb DptfTabl 00001000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: FIDT 0x0000000040BB7000 00009C (v01 _ASUS_ Notebook 01072009 AMI  00010013)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040BB6000 00038C (v02 PmaxDv Pmax_Dev 00000001 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040BB0000 005D2C (v02 CpuRef CpuSsdt  00003000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040BAD000 002AA1 (v02 SaSsdt SaSsdt   00003000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040BA9000 0033D3 (v02 INTEL  IgfxSsdt 00003000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040B9B000 00D487 (v02 INTEL  TcssSsdt 00001000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: HPET 0x0000000040B9A000 000038 (v01 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: APIC 0x0000000040B99000 0001DC (v05 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: MCFG 0x0000000040B98000 00003C (v01 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: SSDT 0x0000000040B93000 004B76 (v02 _ASUS_ AdlP_Rvp 00001000 INTL 20200717)
+Sep 21 05:42:13 fedora kernel: ACPI: NHLT 0x0000000040B92000 0002F1 (v00 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: LPIT 0x0000000040B91000 0000CC (v01 _ASUS_ Notebook 01072009 AMI  01000013)
+Sep 21 05:42:13 fedora kernel: ACPI: Reserving FACP table memory at [mem 0x40c27000-0x40c27113]
+Sep 21 05:42:13 fedora kernel: No NUMA configuration found
+Sep 21 05:42:13 fedora kernel: Faking a node at [mem 0x0000000000000000-0x00000008b07fffff]
+Sep 21 05:42:13 fedora kernel: NODE_DATA(0) allocated [mem 0x8b07d5000-0x8b07fffff]
+Sep 21 05:42:13 fedora kernel: Zone ranges:
+Sep 21 05:42:13 fedora kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Sep 21 05:42:13 fedora kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Sep 21 05:42:13 fedora kernel:   Normal   [mem 0x0000000100000000-0x00000008b07fffff]
+Sep 21 05:42:13 fedora kernel:   Device   empty
+Sep 21 05:42:13 fedora kernel: Movable zone start for each node
+Sep 21 05:42:13 fedora kernel: Early memory node ranges
+Sep 21 05:42:13 fedora kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Sep 21 05:42:13 fedora kernel:   node   0: [mem 0x000000000009f000-0x000000000009ffff]
+Sep 21 05:42:13 fedora kernel:   node   0: [mem 0x0000000000100000-0x0000000037cedfff]
+Sep 21 05:42:13 fedora kernel:   node   0: [mem 0x00000000417ff000-0x00000000417fffff]
+Sep 21 05:42:13 fedora kernel:   node   0: [mem 0x0000000100000000-0x00000008b07fffff]
+Sep 21 05:42:13 fedora kernel: Initmem setup node 0 [mem 0x0000000000001000-0x00000008b07fffff]
+Sep 21 05:42:13 fedora kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: On node 0, zone DMA32: 6929 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: On node 0, zone Normal: 26624 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: On node 0, zone Normal: 30720 pages in unavailable ranges
+Sep 21 05:42:13 fedora kernel: ACPI: PM-Timer IO Port: 0x1808
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Sep 21 05:42:13 fedora kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Sep 21 05:42:13 fedora kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Sep 21 05:42:13 fedora kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Sep 21 05:42:13 fedora kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Sep 21 05:42:13 fedora kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Sep 21 05:42:13 fedora kernel: e820: update [mem 0x3409b000-0x340c9fff] usable ==> reserved
+Sep 21 05:42:13 fedora kernel: TSC deadline timer available
+Sep 21 05:42:13 fedora kernel: CPU topo: Max. logical packages:   1
+Sep 21 05:42:13 fedora kernel: CPU topo: Max. logical dies:       1
+Sep 21 05:42:13 fedora kernel: CPU topo: Max. dies per package:   1
+Sep 21 05:42:13 fedora kernel: CPU topo: Max. threads per core:   2
+Sep 21 05:42:13 fedora kernel: CPU topo: Num. cores per package:    14
+Sep 21 05:42:13 fedora kernel: CPU topo: Num. threads per package:  20
+Sep 21 05:42:13 fedora kernel: CPU topo: Allowing 20 present CPUs plus 0 hotplug CPUs
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x0009efff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x31c36000-0x31c36fff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x31c5a000-0x31c5afff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x3402e000-0x3402efff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x3409b000-0x340c9fff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x37cee000-0x40b46fff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x40b47000-0x40c2cfff]
+Sep 21 05:42:13 fedora kernel: PM: hibernation: Registered nosave memory: [mem 0x40c2d000-0x40d9afff]
+Sep 21 05:42:13 fedora kernel: [mem 0x4f800000-0xfdffffff] available for PCI devices
+Sep 21 05:42:13 fedora kernel: Booting paravirtualized kernel on bare hardware
+Sep 21 05:42:13 fedora kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Sep 21 05:42:13 fedora kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:20 nr_cpu_ids:20 nr_node_ids:1
+Sep 21 05:42:13 fedora kernel: percpu: Embedded 87 pages/cpu s233472 r8192 d114688 u524288
+Sep 21 05:42:13 fedora kernel: pcpu-alloc: s233472 r8192 d114688 u524288 alloc=1*2097152
+Sep 21 05:42:13 fedora kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Sep 21 05:42:13 fedora kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 
+Sep 21 05:42:13 fedora kernel: pcpu-alloc: [0] 16 17 18 19 
+Sep 21 05:42:13 fedora kernel: Kernel command line: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.10.9-200.fc40.x86_64 root=UUID=bcc74405-ffed-4ba7-ac13-0823470b55a0 ro rootflags=subvol=root rhgb quiet
+Sep 21 05:42:13 fedora kernel: Unknown kernel command line parameters "rhgb BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.10.9-200.fc40.x86_64", will be passed to user space.
+Sep 21 05:42:13 fedora kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Sep 21 05:42:13 fedora kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Sep 21 05:42:13 fedora kernel: Fallback order for Node 0: 0 
+Sep 21 05:42:13 fedora kernel: Built 1 zonelists, mobility grouping on.  Total pages: 8291469
+Sep 21 05:42:13 fedora kernel: Policy zone: Normal
+Sep 21 05:42:13 fedora kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+Sep 21 05:42:13 fedora kernel: software IO TLB: area num 32.
+Sep 21 05:42:13 fedora kernel: Memory: 32264476K/33165876K available (20480K kernel code, 4314K rwdata, 15300K rodata, 4724K init, 5276K bss, 901140K reserved, 0K cma-reserved)
+Sep 21 05:42:13 fedora kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=20, Nodes=1
+Sep 21 05:42:13 fedora kernel: ftrace: allocating 55673 entries in 218 pages
+Sep 21 05:42:13 fedora kernel: ftrace: allocated 218 pages with 5 groups
+Sep 21 05:42:13 fedora kernel: Dynamic Preempt: voluntary
+Sep 21 05:42:13 fedora kernel: rcu: Preemptible hierarchical RCU implementation.
+Sep 21 05:42:13 fedora kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=20.
+Sep 21 05:42:13 fedora kernel:         Trampoline variant of Tasks RCU enabled.
+Sep 21 05:42:13 fedora kernel:         Rude variant of Tasks RCU enabled.
+Sep 21 05:42:13 fedora kernel:         Tracing variant of Tasks RCU enabled.
+Sep 21 05:42:13 fedora kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Sep 21 05:42:13 fedora kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=20
+Sep 21 05:42:13 fedora kernel: RCU Tasks: Setting shift to 5 and lim to 1 rcu_task_cb_adjust=1.
+Sep 21 05:42:13 fedora kernel: RCU Tasks Rude: Setting shift to 5 and lim to 1 rcu_task_cb_adjust=1.
+Sep 21 05:42:13 fedora kernel: RCU Tasks Trace: Setting shift to 5 and lim to 1 rcu_task_cb_adjust=1.
+Sep 21 05:42:13 fedora kernel: NR_IRQS: 524544, nr_irqs: 2216, preallocated irqs: 16
+Sep 21 05:42:13 fedora kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Sep 21 05:42:13 fedora kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+Sep 21 05:42:13 fedora kernel: Console: colour dummy device 80x25
+Sep 21 05:42:13 fedora kernel: printk: legacy console [tty0] enabled
+Sep 21 05:42:13 fedora kernel: ACPI: Core revision 20240322
+Sep 21 05:42:13 fedora kernel: hpet: HPET dysfunctional in PC10. Force disabled.
+Sep 21 05:42:13 fedora kernel: APIC: Switch to symmetric I/O mode setup
+Sep 21 05:42:13 fedora kernel: DMAR: Host address width 39
+Sep 21 05:42:13 fedora kernel: DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+Sep 21 05:42:13 fedora kernel: DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c40660462 ecap 29a00f0505e
+Sep 21 05:42:13 fedora kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Sep 21 05:42:13 fedora kernel: DMAR: dmar1: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da
+Sep 21 05:42:13 fedora kernel: DMAR: RMRR base: 0x0000004b000000 end: 0x0000004f7fffff
+Sep 21 05:42:13 fedora kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+Sep 21 05:42:13 fedora kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Sep 21 05:42:13 fedora kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+Sep 21 05:42:13 fedora kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+Sep 21 05:42:13 fedora kernel: x2apic enabled
+Sep 21 05:42:13 fedora kernel: APIC: Switched APIC routing to: cluster x2apic
+Sep 21 05:42:13 fedora kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x26bef67878b, max_idle_ns: 440795293631 ns
+Sep 21 05:42:13 fedora kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 5376.00 BogoMIPS (lpj=2688000)
+Sep 21 05:42:13 fedora kernel: CPU0: Thermal monitoring enabled (TM1)
+Sep 21 05:42:13 fedora kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Sep 21 05:42:13 fedora kernel: CET detected: Indirect Branch Tracking enabled
+Sep 21 05:42:13 fedora kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Sep 21 05:42:13 fedora kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Sep 21 05:42:13 fedora kernel: process: using mwait in idle threads
+Sep 21 05:42:13 fedora kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Sep 21 05:42:13 fedora kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Sep 21 05:42:13 fedora kernel: Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch

@@ -16,4 +16,12 @@
     font-size: 10.9375rem;
     font-size: 18vw;
   }
+
+  [class*="page-header"] [class*="main-wrapper"] [class|="text"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
 }

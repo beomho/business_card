@@ -1,14 +1,14 @@
 html {
   background: #131313;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 html {
   line-height: 1.1;
   font-size: 16px;
   color: #f5eee6;
-  /* font-family: "Tusker Grotesk", sans-serif; */
-  font-family: "Black Han Sans", sans-serif;
+  font-family: "Tusker Grotesk", sans-serif;
+  /* font-family: "Black Han Sans", sans-serif; */
   font-weight: 100;
   font-style: normal;
 }
@@ -23,6 +23,10 @@ body {
 }
 
 body[class*="no-scroll"] {
+  overflow: hidden;
+}
+
+body {
   overflow: hidden;
 }
 
